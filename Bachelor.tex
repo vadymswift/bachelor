@@ -1,4 +1,12 @@
 \documentclass[english,14pt,a4paper]{article}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{sectsty}
+\usepackage[english]{babel}
+\sectionfont{\flushright\huge\bfseries}
+\subsectionfont{\large\bfseries}
+
+
 \usepackage[T1]{fontenc}
 \usepackage{babel}
 \usepackage{graphicx}
@@ -7,17 +15,53 @@
 \usepackage{amssymb}
 \usepackage{qcircuit}
 \usepackage{braket}
+\usepackage{setspace}
 \usetikzlibrary{arrows.meta}
 \usepackage{titlesec}
 
 \title{How to create superposition of quantum states?}
 \author{Vadym Shvydkyi}
 
-
 \begin{document}
+	\pagenumbering{roman}
 	\maketitle
+	\pagebreak
+	\section*{Abstract}
+	\begin{spacing}{1.5}
+	\textit{Author:} Vadym Shvydkyi \\
+	\textit{Title:} How to create superposition of quantum states? \\
+	\textit{Type of thesis:} Bachelor thesis \\
+	\textit{Study Program:} Physics \\
+	\textit{University:} Comenius University in Bratislava \\
+	\textit{Faculty:} Faculty of Mathematics, Physics and Informatics \\
+	\textit{Advisor:} doc. Mgr. Mário Ziman, PhD. \\
+	
+	We know that the ability of quantum systems to be in a superposition of states with different mechanical values is the alpha and omega of the difference between quantum and classical systems. But how to prepare such a superposition of states \textit{X} and \textit{Y}, if we have a system in state \textit{X} and a system in state \textit{Y}? We will find the answer together in this work.
+	
+	\textbf{KEYWORDS:} private quantum channel, weak randomness, unitary k-designs
+	\pagebreak
+	\end{spacing}
+	\pagebreak
+	\begin{spacing}{1.5}
+	\section*{Abstrakt}
+	\begin{spacing}{1.5}
+		\textit{Autor:} Vadym Shvydkyi \\
+		\textit{Názov párce:} Ako spraviť superpozíciu kvantových stavov? \\
+		\textit{Typ práce:} Bakalárska práca \\
+		\textit{Štúdijný program:} Fyzika \\
+		\textit{Škola:} Univerzita Komenského v Bratislava \\
+		\textit{Fakulta:} Fakulta matematiky, fyziky a informatiky \\
+		\textit{Školiteľ:} doc. Mgr. Mário Ziman, PhD. \\
+		
+		We know that the ability of quantum systems to be in a superposition of states with different mechanical values is the alpha and omega of the difference between quantum and classical systems. But how to prepare such a superposition of states \textit{X} and \textit{Y}, if we have a system in state \textit{X} and a system in state \textit{Y}? We will find the answer together in this work.
+		
+		\textbf{KEYWORDS:} private quantum channel, weak randomness, unitary k-designs
+		\pagebreak
+	\end{spacing}
+	
 	\tableofcontents
 	\pagebreak
+	\pagenumbering{arabic	}
 	\section{Introduction to quantum information science}
 	\subsection{Qubit} \ \ \ \
 	First of all, let us introduce such a concept as a \textit{qubit}. If in classical computer science we used either only \textit{0} or only \textit{1} to perform calculations, store and transmit information, in quantum computer science we can use superposition of 0 or 1. In Dirac notation we can describe a qubit as follows:
@@ -78,8 +122,8 @@
 	
 	\subsection{Quantum Circuits and Quantum Gates}
 	
-	 \ \ \ \ The device, which we can call a quantum computer we can describe as a \textit{quantum circuit}, which consists of \textit{registers} and \textit{quantum gates}. In the figure we can see an example of a quantum circuit for Deutsch's algorithm. Quantum gates by analogy with classical computers can be represented as logic elements that act on a qubit and as a result of measurements we perform calculations on a quantum computer.
-	 
+	\ \ \ \ The device, which we can call a quantum computer we can describe as a \textit{quantum circuit}, which consists of \textit{registers} and \textit{quantum gates}. In the figure we can see an example of a quantum circuit for Deutsch's algorithm. Quantum gates by analogy with classical computers can be represented as logic elements that act on a qubit and as a result of measurements we perform calculations on a quantum computer.
+	
 	\begin{figure}[!htbp] %Deutsch
 		\[
 		\Qcircuit @C=1em @R=.7em {
@@ -90,25 +134,60 @@
 		\caption{Deutsch's algorithm}
 		\label{deutsch}
 	\end{figure}
-	 
+	
 	
 	According to the postulate of quantum theory that the evolution of a quantum system in time is described by a \textit{unitary operator}, so the matrix which represents this operator must be unitary. Consider in detail these matrices. We know that these are 2x2 matrices that are unitary. More generally, if a quantum gate acts on multiple registers, i.e. on multiple qubits, then it is a matrix $2^n\text{x}2^n$, which belongs to the $\text{SU}(2^n)$. The qubit we obtained after the quantum gate action is expressed as the multiplication of the operator by the qubit, $\ket{\psi'} = U \ket{\psi}$. \\
 	
 	Here are a few systems that can be described as qubits: 
 	\begin{table}[h]
-	\centering
-	\begin{tabular}{|c|c|} 
-		\hline
-		Degree of freedom & Possible basis states $\ket{0}$, $\ket{1} $\\ 
-		\hline
-		Spin $\frac12$  & $\ket{m = \frac12}$, $\ket{m = - \frac12}	$  \\ 
-
-		Photon polarization & $\ket{\text{horizontal}}$, $\ket{\text{vertical}}$ \\
-
-		Two-level atom & $\ket{\text{groundstate}}$, $\ket{\text{exitedstate}}$ \\ 
-		\hline
-	\end{tabular}
+		\centering
+		\begin{tabular}{|c|c|} 
+			\hline
+			Degree of freedom & Possible basis states $\ket{0}$, $\ket{1} $\\ 
+			\hline
+			Spin $\frac12$  & $\ket{m = \frac12}$, $\ket{m = - \frac12}	$  \\ 
+			
+			Photon polarization & $\ket{\text{horizontal}}$, $\ket{\text{vertical}}$ \\
+			
+			Two-level atom & $\ket{\text{groundstate}}$, $\ket{\text{exitedstate}}$ \\ 
+			\hline
+		\end{tabular}
 	\end{table}
+	
+	
+	\subsection{Density Matrix}
+	Suppose we have a set of states $\{\ket{\psi_i}\}$ and $\{p_i\}$ is the a set of probabilities, where the probability that we are in the state $\ket{\psi_j}$ is $p_j$. For this case, let us find the expectation value of some observable $A$. So it could be describe by 
+	
+	\[
+	\left\langle A \right\rangle = \Sigma_i p_i \bra{\psi _i} A \ket{\psi_i} = Tr(A \rho) = \bra{\psi_i} A \ket{\psi_i}
+	\]
+	here was introduced the density matrix 
+	\[
+	\rho = \Sigma_i p_i \ket{\psi_i} \bra{\psi_i}
+	\]
+	\subsubsection{Properties of density matrix} 
+	1. $Tr(\rho) = 1$ \\
+	2. $\rho = \rho^{\dag}$, the density operator is hermitian \\
+	3. $\bra{\psi}\rho\ket{\psi} \geq 0  $, a density matrix is positive for all $\ket{\psi}$ \\
+	The use of the density matrix can be convenient since it can describe also a quantum system of mixed states. Besides by means of the density matrix one can easily understand whether a state is a mixed state or not. 
+	
+	\textbf{Theorem:} \textit{A quantum state is pure if and only if $Tr(\rho^2) = 1$} \\
+	
+	The density matrix can also be applied in order to make quantum computations. For this purpose let's consider how quantum gates act on the density matrix. If we have the state of $\ket{\psi}$ and after the action of a quantum gate represented in the form of a unitary operator $U$, we obtain the following equality: $\ket{\psi} \rightarrow U\ket{\psi}$ and $\ket{\psi}\bra{\psi} = \rho \rightarrow U\rho U^{\dag}$
+	If we have a mixed state then in order for us to perform computation on each register, we need to split the density matrix for each register. 	
+	Suppose we have a set of registers $\{i\}$ and each of them is described by a Hilbert space $\mathcal{H}_i$ having a basis $\{\ket{j}\}_i$ and the whole quantum system is described by a density matrix $\rho  \in \prod_i \mathcal{H}_i^2$ then in order to obtain the density matrix $\rho_k$ of one register we use a partial trace of the matrix, which is defined in this way:
+1	\[
+	\rho_k = \sum_{\tilde{j}} \bra{\tilde{j}}_k \rho \ket{\tilde{j}}_k
+	\]  
+	in this case $\ket{\tilde{j}}$ is a basis that describes a Hilbert space $\prod_{i \neq k} \mathcal{H}_i^2 $ 
+	
+	\subsubsection{Bures Fidelity} \ \ \ \
+	\textit{Bures fidelity} offers a precise assessment of the distinguishability between two density matrices. In this section, we will employ Bures fidelity to validate the findings from the preceding section. The fidelity is defined as: 
+	\begin{equation}
+		F(\rho_1, \rho_2) = tr(\rho_1^{1/2}\rho_2\rho_1^{1/2})
+	\end{equation}
+	
+	The value of F lies between $0$ and $1$, where $F = 1$ denotes that the states are identical. For the pure state $\rho_1 = \ket{\psi}\bra{\psi}$ we can define the fidelity \[F = \bra{\psi}\rho_2 \ket{\psi}\].
 	
 	\subsection{Examples of quantum gates} \ \ \ \ 
 	Here we would like to provide examples of quantum gates that we will use in the future. Some of them were obtained directly and from the rotation matrices or derived from the truth table for each case. 
@@ -131,35 +210,28 @@
 	\subsubsection{Rotation Operators about the Bloch basis}\ \ \ \
 	Since the Lie algebra of the group $\text{SU}(2)$ is isomorphic to the Lie algebra of the group $\text{SO}(3)$, it is a very useful fact that operators can be represented as rotations of the Bloch sphere. For each axis we have an operator represented in this form:
 	\[
-		R_{\hat{x}}(\eta) = e^{-\frac{i\eta}{2}X} = \begin{pmatrix}
-			\cos(\frac{\eta}{2}) & -i\sin(\frac{\eta}{2}) \\
-			-i\sin(\frac{\eta}{2}) & \cos(\frac{\eta}{2}) \\
+		R_{\hat{x}}(\phi) = e^{-i\frac{\phi}{2}X} = \begin{pmatrix}
+			\cos(\frac{\phi}{2}) & -i\sin(\frac{\phi}{2}) \\
+			-i\sin(\frac{\phi}{2}) & \cos(\frac{\phi}{2}) \\
 		\end{pmatrix}	
 	\]
 	\[
-	R_{\hat{y}}(\eta) = e^{-\frac{i\eta}{2}Y} = \begin{pmatrix}
-		\cos(\frac{\eta}{2}) & -\sin(\frac{\eta}{2}) \\
-		\sin(\frac{\eta}{2}) & \cos(\frac{\eta}{2}) \\
+	R_{\hat{y}}(\phi) = e^{-i\frac{\phi}{2}Y} = \begin{pmatrix}
+		\cos(\frac{\phi}{2}) & -\sin(\frac{\phi}{2}) \\
+		\sin(\frac{\phi}{2}) & \cos(\frac{\phi}{2}) \\
 	\end{pmatrix}	
 	\]
 	\[
-	R_{\hat{z}}(\eta) = e^{-\frac{i\eta}{2}Z} = \begin{pmatrix}
-		e^{-i\frac{\eta}{2}} & 0 \\
-		0 &  e^{i\frac{\eta}{2}}\\
+	R_{\hat{z}}(\phi) = e^{-i\frac{\phi}{2}Z} = \begin{pmatrix}
+		e^{-i\frac{\phi}{2}} & 0 \\
+		0 &  e^{i\frac{\phi}{2}}\\
 	\end{pmatrix}	
 	\]
 	
-	That is, in general we can represent a unitary operator as a rotation operator in three-dimensional space by $\eta$ around an axis in the direction of the unit vector $\hat{n}$.
+	That is, in general we can represent a unitary operator as a rotation operator in three-dimensional space by $\phi$ around an axis in the direction of the unit vector $\hat{n}$.
 	 \begin{equation}
-	 R_{\hat{n}}(\eta) = e^{-\frac{i}{2}\eta \hat{n}\cdot \vec{\sigma}}
+	 R_{\hat{n}}(\phi) = e^{-\frac{i}{2}\phi \hat{n}\cdot \vec{\sigma}}
 	\end{equation}
-	\subsection{Bures Fidelity} \ \ \ \
-	\textit{Bures fidelity} offers a precise assessment of the distinguishability between two density matrices. In this section, we will employ Bures fidelity to validate the findings from the preceding section. The fidelity is defined as: 
-	\begin{equation}
-		F(\rho_1, \rho_2) = tr(\rho_1^{1/2}\rho_2\rho_1^{1/2})
-	\end{equation}
-	
-	The value of F lies between $0$ and $1$, where $F = 1$ denotes that the states are identical. For the pure state $\rho_1 = \ket{\psi}\bra{\psi}$ we can define the fidelity \[F = \bra{\psi}\rho_2 \ket{\psi}\].
 	
 	
 	\pagebreak
@@ -221,7 +293,8 @@
 		\caption{Bloch sphere for $\ket{\Psi} $}
 		\label{fig:blochsphere2}
 	\end{figure} 
-	Let us consider in detail the superposition on the example of simple states, i.e. $\ket{0}$ and $\ket{1}$. 
+	Let us consider in detail the superposition on the example of simple states, i.e. $\ket{0}$ and $\ket{1}$. The Hadamard operator is used to create a superposition of these basic states, which we discussed in the introduction chapter. This operator can be expressed in terms of Pauly matrices as follows: $ H = \frac{X + Z}{\sqrt{2}}$. From this notation, we see that the Hadamard operator is half a full rotation about the x-axis and half a full rotation about the z-axis.
+	\subsection{Universal Hadamard}
 	
-	
+		
 \end{document}

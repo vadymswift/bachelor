@@ -1,0 +1,211 @@
+\documentclass{beamer}% тип документа
+% далее идёт преамбула
+\title{How to create superposition of quantum states?}
+\author{Vadym Shvydkyi Supervised by doc. Mgr. Mário Ziman, PhD.}
+\usetheme{Luebeck}
+\institute{Comenius University in Bratislava}
+
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{qcircuit}
+\usepackage{braket}
+\usetikzlibrary{arrows.meta}
+\usepackage{titlesec}
+
+\begin{document}% начало презентации
+	
+	\begin{frame}% первый слайд
+		\titlepage
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Qubit}
+		\begin{itemize}\itemsep=2ex
+			\item The superposition of states of classical bits is used to perform computations in quantum informatics\\
+			$\ket{\psi} = \alpha \ket{0} + \beta \ket{1} = \begin{pmatrix} {\alpha} \\ {\beta } \end{pmatrix}$
+			\item Examples of systems that can be used as a qubit: \\ spin $\frac{1}{2}$;\\ photon polarization; \\ two-level atom.
+		\end{itemize}
+
+	\end{frame}
+	\begin{frame}
+		\frametitle{Qubit}
+
+		\begin{itemize}
+			\item If we have a system of two qubits and the first one is described by the space $\mathcal{H}_A$ and the second one is described by the space $\mathcal{H}_B$ then the whole system is described by the space $\mathcal{H}_A \otimes \mathcal{H}_B$ 
+			\item A qubit $\ket{\psi}_{AB} \in \mathcal{H}_A \otimes \mathcal{H}_B$ that describes a system of two qubits $\ket{\psi_a}_A \in \mathcal{H}_A$ and $\ket{\psi_b}_B \in \mathcal{H}_B$ can be describe in such way $\ket{\psi}_{AB} = \ket{\psi_a}_A \otimes \ket{\psi_b}_B = \ket{\psi_a \psi_b}$
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Density matrix}
+		\begin{itemize}
+		\item Set of  states $\{ \ket{\psi_i} \}$ and set of probabilities $\{ p_i \}$ is introduced a density matrix
+		\[
+		\rho = \Sigma p_i \ket{\psi_i} \bra{\psi_i}
+		\]
+		\item The density matrix for a particular state $\ket{\psi}$ looks as follows $\rho_{\psi} = \ket{\psi}\bra{\psi}$
+		\item Density matrix $\rho$ for the state of $n$ several systems $\{\rho_i\}$ is equal $\rho = \rho_1 \otimes \rho_2 \otimes ... \otimes \rho_n$
+		\end{itemize}
+ 	\end{frame}
+	\begin{frame}
+		\frametitle{Quantum Gates}
+		\begin{itemize}
+			\item Quantum gates are used to implement quantum algorithms 
+			\begin{figure}[!htbp] %Deutsch
+				\[
+				\Qcircuit @C=1em @R=.7em {
+					\lstick{\ket{0}} & \gate{H} & \multigate{1}{U_f} & \gate{H} & \qw \\
+					\lstick{\ket{1}} & \gate{H} & \ghost{U_f} & \qw & \qw \\
+				}
+				\]
+				\caption{Deutsch's algorithm}
+				\label{deutsch}
+			\end{figure}
+			\item The quantum gate operator is a unitary operator: $H^{\dag}H = \mathbb{I}$
+		\end{itemize}
+	\end{frame}
+	\begin{frame}
+		\frametitle{Quantum gates}
+		\begin{itemize}
+			\item $X, Y, Z$ \\
+			$X \ket{\psi} = \begin{pmatrix} 0 & 1 \\ 1 & 0\end{pmatrix}\begin{pmatrix} \alpha \\ \beta \end{pmatrix}$ \\
+			$Y \ket{\psi} = \begin{pmatrix} 0 & -i \\ i & 0\end{pmatrix}\begin{pmatrix} \alpha \\ \beta \end{pmatrix}$ \\
+			$Z \ket{\psi} = \begin{pmatrix} 0 & 1 \\ -1 & 0\end{pmatrix}\begin{pmatrix} \alpha \\ \beta \end{pmatrix}$ \\
+			\item $H$ - Hadamard operator:
+			\[
+			H \ket{0} = \frac{\ket{0} + \ket{1}}{\sqrt{2}} \ H \ket{1} = \frac{\ket{0} - \ket{1}}{\sqrt{2}}
+			\]
+		\end{itemize}
+	\end{frame}
+	\begin{frame}
+		\frametitle{Quantum gates}
+		\begin{itemize}
+		\item Control Not Gate: $\ket{\psi} \rightarrow (\ket{0}\bra{0} \otimes \mathbb{I} + \ket{1}\bra{1} \otimes X)\ket{\psi}$ \\
+		$\ket{00} \rightarrow \ket{00}$ \\
+		$\ket{01} \rightarrow \ket{01}$ \\
+		$\ket{10} \rightarrow \ket{11}$ \\
+		$\ket{11} \rightarrow \ket{10}$ \\
+		\end{itemize}
+		\begin{figure}[!htbp] %Deutsch
+			\[
+			\Qcircuit @C=1em @R=.7em {
+				\lstick{\ket{\psi_1}} & \ctrl{1} & \qw & \\
+				\lstick{\ket{\psi_2}} & \targ & \qw &\\
+			}
+			\]
+			\caption{CNOT}
+			\label{cnot}
+		\end{figure}
+	\end{frame}
+	\begin{frame}
+		\frametitle{Universal Hadamard Gate}
+		\begin{itemize}
+			\item Creation of superposition from the general state:
+			\begin{block}{}
+				$\ket{\psi} \rightarrow \frac{\ket{\psi} + \ket{\psi^{\perp}}}{\sqrt{2}} = \ket{\Psi}$, in general $\breve{H}\ket{\psi}_a \ket{Q}_{b...} = \frac{\ket{\psi} + \ket{\psi^{\perp}}}{\sqrt{2}}_a \ket{Q_{\psi}}_{\dots}$
+			\end{block}
+		\end{itemize}
+		\begin{figure}[!htbp] %Deutsch
+			\[
+			\Qcircuit @C=1em @R=.7em {
+				\lstick{\ket{\psi}} & \multigate{1}{\breve{H}} & \rstick{\frac{\ket{\psi} + \ket{\psi^{\perp}} }{\sqrt{2}}} \qw \\
+				\lstick{\ket{Q}} &\ghost{\breve{H}} & \qw & \rstick{\ket{Q_{\psi}}}
+			}
+			\]
+			\caption{U-Hadamard}
+			\label{uh}
+		\end{figure}
+	\end{frame}
+	\begin{frame}
+		\frametitle{Universal Hadamard Gate}
+		\begin{block}
+			{Nonlinearity of the U-Hadamard operator}
+			$\hat{G}|\psi \rangle_a | Q \rangle _b = \hat{G}(\alpha |0 \rangle_a  + \beta |1 \rangle_a)| Q \rangle _b = \alpha \hat{G}|0 \rangle_a | Q \rangle _b + \beta \hat{G}|1 \rangle_a | Q \rangle _b = \alpha \hat{G}|1 \rangle_a | Q_0 \rangle _b + \beta \hat{G}|0 \rangle_a | Q_1 \rangle _b$
+		\end{block}
+		This operator is not linear, which means it is not unitary and cannot be realized as a quantum gate
+	\end{frame}
+	\begin{frame}
+		\frametitle{Bures Fidelity}
+		If we cannot create an exact state $\sigma$, we can create a state $\rho$ as close to the required state as possible to implement the algorithm.
+		\begin{block}{Bures Fidelity}
+			$F = Tr(\sqrt{\sqrt{\rho}\sigma\sqrt{\rho}}) \in (0, \ 1)$ or for pure state $\sigma = \ket{\Psi}\bra{\Psi}$ $\Rightarrow$ $F = \bra{\Psi}\rho\ket{\Psi}$
+		\end{block}
+		
+	\end{frame}
+	\begin{frame}
+		\frametitle{Universal Cloner and Universal NOT Gates}
+		\begin{itemize}
+			\item $\ket{\psi} \rightarrow \frac{\ket{\psi} + \ket{\psi^{\perp}} }{\sqrt{2}}$
+			\item Universal Cloner $\ket{\psi \phi} \rightarrow \ket{\psi \psi} = U_c\ket{\psi \phi}$
+			\begin{block}{Nonlinearity of U-Cloner}
+				$\ket{\psi \phi} = \alpha\ket{0\phi} + \beta\ket{1\phi} \rightarrow \alpha\ket{00} + \beta\ket{11} \neq \ket{\psi \psi}$
+			\end{block}
+			\item Universal NOT Gate $\alpha \ket{0} + \beta \ket{1} = \ket{\psi} \rightarrow \ket{\psi^{\perp}} = \beta^*\ket{0} - \alpha^* \ket{1}$
+			\begin{block}{Nonlinearity of U-NOT}
+				$\ket{\psi} = \alpha \ket{0} + \beta \ket{1} = \alpha \ket{1} + \beta \ket{0} \neq \ket{\psi^{\perp}}$
+			\end{block}
+		\end{itemize}
+	\end{frame}
+	\begin{frame}
+		\frametitle{U-Cloner and U-NOT Machine}
+		\[
+		\Qcircuit @C=1em @R=1em {
+			\lstick{\ket{0}} & \ctrl{1} & \ctrl{2} & \targ     & \targ     & \qw \\
+			\lstick{\ket{0}} & \targ    & \qw      & \ctrl{-1} & \qw       & \qw \\
+			\lstick{\ket{0}} & \qw      & \targ    & \qw       & \ctrl{-2} & \qw \\
+		}
+		\]
+		\begin{itemize}
+			\item $\ket{\psi}_a \ket{\Xi_{00}}_{bc} = \ket{\psi}(\frac{1}{\sqrt{2}}(\ket{00} + \ket{11})) \rightarrow \ket{\psi}_a\ket{\Xi}_{bc}$
+			\item $\ket{\psi}_a \ket{\Xi_{0+}}_{bc} = \ket{\psi}(\frac{1}{\sqrt{2}}(\ket{00} + \ket{01})) \rightarrow \ket{\psi}_b\ket{\Xi}_{ac}$
+			\item $\ket{\Xi}_{bc} = c_0 \ket{\Xi_{00}}_{bc} + c_1 \ket{\Xi_{0x}}_{bc}$
+		\end{itemize}
+	\end{frame}
+	\begin{frame}
+		\frametitle{U-Cloner and U-NOT Machine}
+		\[
+		\Qcircuit @C=1em @R=1em {
+			\lstick{\ket{0}} & \ctrl{1} & \ctrl{2} & \targ     & \targ     & \qw \\
+			\lstick{\ket{0}} & \targ    & \qw      & \ctrl{-1} & \qw       & \qw \\
+			\lstick{\ket{0}} & \qw      & \targ    & \qw       & \ctrl{-2} & \qw \\
+		}
+		\]
+		\begin{itemize}
+			\item $\rho_1^{out} = (c_0^2 + c_0 c_1) \ket{\psi}\bra{\psi} + \frac12 c_1^2 \mathbb{I}$ \\ $\rho_2^{out} = (c_0^1 + c_0 c_1) \ket{\psi}\bra{\psi} + \frac12 c_0^2 \mathbb{I}$ \\ $\rho_3^{out} = c_0 c_1 \ket{\psi^*}\bra{\psi^*} + \frac12(1 - c_0c_1)\mathbb{I}$
+			\item $c_0 = c_1 = \frac{1}{\sqrt{3}} \Rightarrow \rho_1^{out} = \rho_2^{out} = \frac56 \ket{\psi}\bra{\psi} + \frac16\ket{\psi^{\perp}}\bra{\psi^{\perp}}$ \\ $F_{\ket{\psi}} = \frac56$
+			\item $(i Y)\rho_3^{out} (iY)^{\dag}= \frac13\ket{\psi}\bra{\psi} + \frac23\ket{\psi^{\perp}}\bra{\psi^{\perp}}$ \\ $F_{\ket{\psi^{\perp}}} = \frac23$
+		\end{itemize}
+	\end{frame}
+	\begin{frame}
+		\frametitle{Idea of U-Hadamard}
+		\[
+		\Qcircuit @C=1em @R=1em {
+			\lstick{\ket{0}} &\ctrl{2}&\ctrl{3}&\qw     & \qw      & \targ   & \targ   & \qw     & \qw     & \qw \\
+			\lstick{\ket{0}} &\qw     &\qw     &\ctrl{1}&\ctrl{2}  & \qw     &\qw      & \targ   & \targ   & \qw \\
+			\lstick{\ket{0}} &\targ   &\qw     & \targ  & \qw      &\ctrl{-2}&\qw      &\ctrl{-1}& \qw     & \qw \\
+			\lstick{\ket{0}} &\qw     &\targ   & \qw    & \targ    & \qw     &\ctrl{-3}&\qw      &\ctrl{-2}& \qw
+		}
+		\]
+		$\rho_2^{out}_a \otimes (i Y)\rho_3^{out} (iY)^{\dag}_b \otimes \check{\rho}_{cd} \rightarrow \rho^{goal}_b \tilde{\rho}_{acd}$
+	\end{frame}
+	\begin{frame}
+		\frametitle{Idea of U-Hadamard}
+		By varying the constants $C_i, \ i = \{1, 2, 3, 4 \}$, the maximum value of F can be obtained  
+		\[
+		\Qcircuit @C=1em @R=1em {
+\lstick{\ket{0}} &\ctrl{2}&\ctrl{3}&\qw     & \qw      & \targ   & \targ   & \qw     & \qw     & \qw \\
+\lstick{\ket{0}} &\qw     &\qw     &\ctrl{1}&\ctrl{2}  & \qw     &\qw      & \targ   & \targ   & \qw \\
+\lstick{\ket{0}} &\targ   &\qw     & \targ  & \qw      &\ctrl{-2}&\qw      &\ctrl{-1}& \qw     & \qw \\
+\lstick{\ket{0}} &\qw     &\targ   & \qw    & \targ    & \qw     &\ctrl{-3}&\qw      &\ctrl{-2}& \qw
+		}
+		\]
+		$\check{\rho} = C_1 \ket{00}\bra{00} + C_2 \ket{01}\bra{00} + C_3 \ket{00}\bra{01} + C_4 \ket{11}\bra{11}$ \\
+		$\rho^{goal} = A \ket{\psi}\bra{\psi} + B \ket{\psi}\bra{\psi^{\perp}} + C \ket{\psi^{\perp}}\bra{\psi} + D \ket{\psi^{\perp}}\bra{\psi^{\perp}}$
+		$ F = \frac{\bra{\psi} + \bra{\psi^{\perp}}}{\sqrt{2}} \rho^{goal} \frac{\ket{\psi} + \ket{\psi^{\perp}}}{\sqrt{2}} = \frac12(1 + C + D)$
+		\textit{To be continued...}
+	\end{frame}
+\end{document}
