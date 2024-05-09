@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.31)  8 MAY 2024 14:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.31)  9 MAY 2024 15:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -35,38 +35,17 @@ Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \titlewidth=\dimen143
 \titlewidthlast=\dimen144
 \titlewidthfirst=\dimen145
-)
-(C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
-Package: enumitem 2019/06/20 v3.9 Customized lists
-\enitkv@toks@=\toks18
-\labelindent=\skip52
-\enit@outerparindent=\dimen146
-\enit@toks=\toks19
-\enit@inbox=\box52
-\enit@count@id=\count196
-\enitdp@description=\count197
-)
-(C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/latex/sectsty\sectsty.sty
-Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
-les
-
-
-LaTeX Warning: Command \underbar  has changed.
-               Check if current package is valid.
-
-
-LaTeX Warning: Command \underline  has changed.
-               Check if current package is valid.
-
+) (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 ) (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2024/02/07 v24.2 The Babel package
-\babel@savecnt=\count198
-\U@D=\dimen147
+\babel@savecnt=\count196
+\U@D=\dimen146
 \l@unhyphenated=\language79
 
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count199
+\bbl@dirlevel=\count197
 
 *************************************
 * Local config file bblopts.cfg used
@@ -90,15 +69,12 @@ Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 11.
 )
-(C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
-Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-)
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks20
+\KV@toks@=\toks18
 )
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
@@ -115,72 +91,72 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen148
-\Gin@req@width=\dimen149
+\Gin@req@height=\dimen147
+\Gin@req@width=\dimen148
 ) (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2023/05/13 v2.17o AMS math features
-\@mathmargin=\skip53
+\@mathmargin=\skip52
 For additional information on amsmath, use the `?' option.
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
 
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks21
-\ex@=\dimen150
+\@emptytoks=\toks19
+\ex@=\dimen149
 ))
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen151
+\pmbraise@=\dimen150
 )
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count266
+\inf@bad=\count198
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count267
-\leftroot@=\count268
+\uproot@=\count199
+\leftroot@=\count266
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count269
-\DOTSCASE@=\count270
+\classnum@=\count267
+\DOTSCASE@=\count268
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box53
-\strutbox@=\box54
+\Mathstrutbox@=\box52
+\strutbox@=\box53
 LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen152
+\big@size=\dimen151
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count271
+\macc@depth=\count269
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count272
+\c@MaxMatrixCols=\count270
 \dotsspace@=\muskip16
-\c@parentequation=\count273
-\dspbrk@lvl=\count274
-\tag@help=\toks22
-\row@=\count275
-\column@=\count276
-\maxfields@=\count277
-\andhelp@=\toks23
-\eqnshift@=\dimen153
-\alignsep@=\dimen154
-\tagshift@=\dimen155
-\tagwidth@=\dimen156
-\totwidth@=\dimen157
-\lineht@=\dimen158
-\@envbody=\toks24
-\multlinegap=\skip54
-\multlinetaggap=\skip55
-\mathdisplay@stack=\toks25
+\c@parentequation=\count271
+\dspbrk@lvl=\count272
+\tag@help=\toks20
+\row@=\count273
+\column@=\count274
+\maxfields@=\count275
+\andhelp@=\toks21
+\eqnshift@=\dimen152
+\alignsep@=\dimen153
+\tagshift@=\dimen154
+\tagwidth@=\dimen155
+\totwidth@=\dimen156
+\lineht@=\dimen157
+\@envbody=\toks22
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
@@ -191,13 +167,13 @@ sty
 y
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -common.tex
-\pgfutil@everybye=\toks26
-\pgfutil@tempdima=\dimen159
-\pgfutil@tempdimb=\dimen160
+\pgfutil@everybye=\toks24
+\pgfutil@tempdima=\dimen158
+\pgfutil@tempdimb=\dimen159
 )
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -latex.def
-\pgfutil@abb=\box55
+\pgfutil@abb=\box54
 )
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
 code.tex
@@ -216,33 +192,33 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
 .code.tex
-\pgfkeys@pathtoks=\toks27
-\pgfkeys@temptoks=\toks28
+\pgfkeys@pathtoks=\toks25
+\pgfkeys@temptoks=\toks26
 
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
 libraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks29
+\pgfkeys@tmptoks=\toks27
 ))
-\pgf@x=\dimen161
-\pgf@y=\dimen162
-\pgf@xa=\dimen163
-\pgf@ya=\dimen164
-\pgf@xb=\dimen165
-\pgf@yb=\dimen166
-\pgf@xc=\dimen167
-\pgf@yc=\dimen168
-\pgf@xd=\dimen169
-\pgf@yd=\dimen170
+\pgf@x=\dimen160
+\pgf@y=\dimen161
+\pgf@xa=\dimen162
+\pgf@ya=\dimen163
+\pgf@xb=\dimen164
+\pgf@yb=\dimen165
+\pgf@xc=\dimen166
+\pgf@yc=\dimen167
+\pgf@xd=\dimen168
+\pgf@yd=\dimen169
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count278
-\c@pgf@countb=\count279
-\c@pgf@countc=\count280
-\c@pgf@countd=\count281
-\t@pgf@toka=\toks30
-\t@pgf@tokb=\toks31
-\t@pgf@tokc=\toks32
-\pgf@sys@id@count=\count282
+\c@pgf@counta=\count276
+\c@pgf@countb=\count277
+\c@pgf@countc=\count278
+\c@pgf@countd=\count279
+\t@pgf@toka=\toks28
+\t@pgf@tokb=\toks29
+\t@pgf@tokc=\toks30
+\pgf@sys@id@count=\count280
 
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
 fg
@@ -261,8 +237,8 @@ File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 ssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count283
-\pgfsyssoftpath@bigbuffer@items=\count284
+\pgfsyssoftpath@smallbuffer@items=\count281
+\pgfsyssoftpath@bigbuffer@items=\count282
 )
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 sprotocol.code.tex
@@ -296,12 +272,12 @@ Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 code.tex)
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
 r.code.tex
-\pgfmath@dimen=\dimen171
-\pgfmath@count=\count285
-\pgfmath@box=\box56
-\pgfmath@toks=\toks33
-\pgfmath@stack@operand=\toks34
-\pgfmath@stack@operation=\toks35
+\pgfmath@dimen=\dimen170
+\pgfmath@count=\count283
+\pgfmath@box=\box55
+\pgfmath@toks=\toks31
+\pgfmath@stack@operand=\toks32
+\pgfmath@stack@operation=\toks33
 )
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
 ions.code.tex)
@@ -325,59 +301,59 @@ ions.integerarithmetics.code.tex)
 code.tex)
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
 .code.tex
-\c@pgfmathroundto@lastzeros=\count286
+\c@pgfmathroundto@lastzeros=\count284
 ))
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
 tex)
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen172
-\pgf@picmaxx=\dimen173
-\pgf@picminy=\dimen174
-\pgf@picmaxy=\dimen175
-\pgf@pathminx=\dimen176
-\pgf@pathmaxx=\dimen177
-\pgf@pathminy=\dimen178
-\pgf@pathmaxy=\dimen179
-\pgf@xx=\dimen180
-\pgf@xy=\dimen181
-\pgf@yx=\dimen182
-\pgf@yy=\dimen183
-\pgf@zx=\dimen184
-\pgf@zy=\dimen185
+\pgf@picminx=\dimen171
+\pgf@picmaxx=\dimen172
+\pgf@picminy=\dimen173
+\pgf@picmaxy=\dimen174
+\pgf@pathminx=\dimen175
+\pgf@pathmaxx=\dimen176
+\pgf@pathminy=\dimen177
+\pgf@pathmaxy=\dimen178
+\pgf@xx=\dimen179
+\pgf@xy=\dimen180
+\pgf@yx=\dimen181
+\pgf@yy=\dimen182
+\pgf@zx=\dimen183
+\pgf@zy=\dimen184
 )
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen186
-\pgf@path@lasty=\dimen187
+\pgf@path@lastx=\dimen185
+\pgf@path@lasty=\dimen186
 )
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen188
-\pgf@shorten@start@additional=\dimen189
+\pgf@shorten@end@additional=\dimen187
+\pgf@shorten@start@additional=\dimen188
 )
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 escopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfpic=\box57
-\pgf@hbox=\box58
-\pgf@layerbox@main=\box59
-\pgf@picture@serial@count=\count287
+\pgfpic=\box56
+\pgf@hbox=\box57
+\pgf@layerbox@main=\box58
+\pgf@picture@serial@count=\count285
 )
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 egraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen190
+\pgflinewidth=\dimen189
 )
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 etransformations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen191
-\pgf@pt@y=\dimen192
-\pgf@pt@temp=\dimen193
+\pgf@pt@x=\dimen190
+\pgf@pt@y=\dimen191
+\pgf@pt@temp=\dimen192
 )
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 equick.code.tex
@@ -394,14 +370,14 @@ File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 earrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen194
+\pgfarrowsep=\dimen193
 )
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen195
-\pgf@sys@shading@range@num=\count288
-\pgf@shadingcount=\count289
+\pgf@max=\dimen194
+\pgf@sys@shading@range@num=\count286
+\pgf@shadingcount=\count287
 )
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eimage.code.tex
@@ -410,7 +386,7 @@ File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eexternal.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfexternal@startupbox=\box60
+\pgfexternal@startupbox=\box59
 )
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 elayers.code.tex
@@ -431,7 +407,7 @@ File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 shapes.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box61
+\pgfnodeparttextbox=\box60
 )
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 plot.code.tex
@@ -440,8 +416,8 @@ File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
 mp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen196
-\pgf@nodesepend=\dimen197
+\pgf@nodesepstart=\dimen195
+\pgf@nodesepend=\dimen196
 )
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
 mp-version-1-18.sty
@@ -459,10 +435,10 @@ ty
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
 code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen198
-\pgffor@skip=\dimen199
-\pgffor@stack=\toks36
-\pgffor@toks=\toks37
+\pgffor@iter=\dimen197
+\pgffor@skip=\dimen198
+\pgffor@stack=\toks34
+\pgffor@toks=\toks35
 ))
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z\tikz.code.tex
@@ -471,34 +447,34 @@ Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count290
-\pgfplotmarksize=\dimen256
+\pgf@plot@mark@count=\count288
+\pgfplotmarksize=\dimen199
 )
-\tikz@lastx=\dimen257
-\tikz@lasty=\dimen258
-\tikz@lastxsaved=\dimen259
-\tikz@lastysaved=\dimen260
-\tikz@lastmovetox=\dimen261
-\tikz@lastmovetoy=\dimen262
-\tikzleveldistance=\dimen263
-\tikzsiblingdistance=\dimen264
-\tikz@figbox=\box62
-\tikz@figbox@bg=\box63
-\tikz@tempbox=\box64
-\tikz@tempbox@bg=\box65
-\tikztreelevel=\count291
-\tikznumberofchildren=\count292
-\tikznumberofcurrentchild=\count293
-\tikz@fig@count=\count294
+\tikz@lastx=\dimen256
+\tikz@lasty=\dimen257
+\tikz@lastxsaved=\dimen258
+\tikz@lastysaved=\dimen259
+\tikz@lastmovetox=\dimen260
+\tikz@lastmovetoy=\dimen261
+\tikzleveldistance=\dimen262
+\tikzsiblingdistance=\dimen263
+\tikz@figbox=\box61
+\tikz@figbox@bg=\box62
+\tikz@tempbox=\box63
+\tikz@tempbox@bg=\box64
+\tikztreelevel=\count289
+\tikznumberofchildren=\count290
+\tikznumberofcurrentchild=\count291
+\tikz@fig@count=\count292
 
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 matrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count295
-\pgfmatrixcurrentcolumn=\count296
-\pgf@matrix@numberofcolumns=\count297
+\pgfmatrixcurrentrow=\count293
+\pgfmatrixcurrentcolumn=\count294
+\pgf@matrix@numberofcolumns=\count295
 )
-\tikz@expandcount=\count298
+\tikz@expandcount=\count296
 
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarytopaths.code.tex
@@ -531,51 +507,51 @@ s.tex)
  Xy-pic is free software: see the User's Guide for details.
 
 Loading kernel: messages; fonts; allocations: state,
-\X@c=\dimen265
-\Y@c=\dimen266
-\U@c=\dimen267
-\D@c=\dimen268
-\L@c=\dimen269
-\R@c=\dimen270
-\Edge@c=\toks38
-\X@p=\dimen271
-\Y@p=\dimen272
-\U@p=\dimen273
-\D@p=\dimen274
-\L@p=\dimen275
-\R@p=\dimen276
-\Edge@p=\toks39
-\X@origin=\dimen277
-\Y@origin=\dimen278
-\X@xbase=\dimen279
-\Y@xbase=\dimen280
-\X@ybase=\dimen281
-\Y@ybase=\dimen282
-\X@min=\dimen283
-\Y@min=\dimen284
-\X@max=\dimen285
-\Y@max=\dimen286
-\lastobjectbox@=\box66
-\zerodotbox@=\box67
-\almostz@=\dimen287
+\X@c=\dimen264
+\Y@c=\dimen265
+\U@c=\dimen266
+\D@c=\dimen267
+\L@c=\dimen268
+\R@c=\dimen269
+\Edge@c=\toks36
+\X@p=\dimen270
+\Y@p=\dimen271
+\U@p=\dimen272
+\D@p=\dimen273
+\L@p=\dimen274
+\R@p=\dimen275
+\Edge@p=\toks37
+\X@origin=\dimen276
+\Y@origin=\dimen277
+\X@xbase=\dimen278
+\Y@xbase=\dimen279
+\X@ybase=\dimen280
+\Y@ybase=\dimen281
+\X@min=\dimen282
+\Y@min=\dimen283
+\X@max=\dimen284
+\Y@max=\dimen285
+\lastobjectbox@=\box65
+\zerodotbox@=\box66
+\almostz@=\dimen286
  direction,
-\d@X=\dimen288
-\d@Y=\dimen289
-\K@=\count299
-\KK@=\count300
-\Direction=\count301
-\K@dXdY=\dimen290
-\K@dYdX=\dimen291
+\d@X=\dimen287
+\d@Y=\dimen288
+\K@=\count297
+\KK@=\count298
+\Direction=\count299
+\K@dXdY=\dimen289
+\K@dYdX=\dimen290
 \xyread@=\read4
 \xywrite@=\write4
-\csp@=\count302
-\quotPTK@=\dimen292
+\csp@=\count300
+\quotPTK@=\dimen291
 
 utility macros; pictures: \xy, positions,
-\swaptoks@@=\toks40
-\connectobjectbox@@=\box68
+\swaptoks@@=\toks38
+\connectobjectbox@@=\box67
  objects,
-\styletoks@=\toks41
+\styletoks@=\toks39
  decorations;
 kernel objects: directionals, circles, text; options; algorithms: directions,
 edges, connections;  Xy-pic loaded)
@@ -591,13 +567,13 @@ Package: xy 2013/10/06 Xy-pic version 3.8.9
 ex  Xy-pic option: PDF driver v.1.7 loaded))
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/latex/xypic/texinputs\xymatri
 x.tex  Xy-pic option: Matrix feature v.3.14
-\Row=\count303
-\Col=\count304
-\queue@=\toks42
-\queue@@=\toks43
-\qcount@=\count305
-\qcount@@=\count306
-\matrixsize@=\count307
+\Row=\count301
+\Col=\count302
+\queue@=\toks40
+\queue@@=\toks41
+\qcount@=\count303
+\qcount@@=\count304
+\matrixsize@=\count305
  loaded)
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/latex/xypic/texinputs\xyframe
 .tex  Xy-pic option: Frame and Bracket extension v.3.14 loaded)
@@ -606,15 +582,15 @@ Xy-pic pdf driver: `frame' extension support
 r.tex
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/latex/xypic/texinputs\xycurve
 .tex  Xy-pic option: Curve and Spline extension v.3.12 curve,
-\crv@cnt@=\count308
-\crvpts@=\toks44
-\splinebox@=\box69
-\splineval@=\dimen293
-\splinedepth@=\dimen294
-\splinetol@=\dimen295
-\splinelength@=\dimen296
+\crv@cnt@=\count306
+\crvpts@=\toks42
+\splinebox@=\box68
+\splineval@=\dimen292
+\splinedepth@=\dimen293
+\splinetol@=\dimen294
+\splinelength@=\dimen295
  circles,
-\L@=\dimen297
+\L@=\dimen296
  loaded)
 Xy-pic pdf driver: `curve' extension support
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/latex/xypic/texinputs\xypdf-c
@@ -628,19 +604,22 @@ elliptical arcs, loaded))
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 )
+(C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\avant.sty
+Package: avant 2020/03/25 PSNFSS-v9.3 (SPQR) 
+)
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen298
-\pgfarrowlength=\dimen299
-\pgfarrowwidth=\dimen300
-\pgfarrowlinewidth=\dimen301
+\pgfarrowinset=\dimen297
+\pgfarrowlength=\dimen298
+\pgfarrowwidth=\dimen299
+\pgfarrowlinewidth=\dimen300
 )
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count309
-\l__pdf_internal_box=\box70
+\l__color_backend_stack_int=\count307
+\l__pdf_internal_box=\box69
 )
 
 LaTeX Warning: Unused global option(s):
@@ -649,35 +628,35 @@ LaTeX Warning: Unused global option(s):
 (Bachelor.aux)
 \openout1 = `Bachelor.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
 
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count310
-\scratchdimen=\dimen302
-\scratchbox=\box71
-\nofMPsegments=\count311
-\nofMParguments=\count312
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count313
-\MPscratchDim=\dimen303
-\MPnumerator=\count314
-\makeMPintoPDFobject=\count315
-\everyMPtoPDFconversion=\toks46
+\scratchcounter=\count308
+\scratchdimen=\dimen301
+\scratchbox=\box70
+\nofMPsegments=\count309
+\nofMParguments=\count310
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count311
+\MPscratchDim=\dimen302
+\MPnumerator=\count312
+\makeMPintoPDFobject=\count313
+\everyMPtoPDFconversion=\toks44
 )
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -689,210 +668,110 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
 
  (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
 
 
 (C:\Users\vadim\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Package xypdf Info: Line width: 0.39998pt on input line 25.
+Package xypdf Info: Line width: 0.39998pt on input line 20.
 
 [1
 
 {C:/Users/vadim/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 31--38
+Underfull \hbox (badness 10000) in paragraph at lines 26--33
 
  []
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 48--55
 
+Overfull \hbox (20.74768pt too wide) in paragraph at lines 36--38
+[]\T1/cmr/bx/n/10 KEYWORDS: \T1/cmr/m/n/10 quantum-information, quantum-mechani
+cs, quantum-computer,
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 43--50
+
+ []
+
+
+Overfull \hbox (1.14136pt too wide) in paragraph at lines 51--52
+[]\T1/cmr/m/n/10 Vieme, ºe schop-nos´ kvan-tových sys-té-mov by´ v su-per-pozíc
+ii stavov s rôznymi
  []
 
 [3] (Bachelor.toc)
 \tf@toc=\write5
 \openout5 = `Bachelor.toc'.
 
- [4]
-! Missing number, treated as zero.
-<to be read again> 
-                   \hfil 
-l.110 	\end{equation}
-                     
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-[1] <xymatrix 5x2 577>
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
+ [4] <xymatrix 5x2 577> [1]
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
 
-! Missing number, treated as zero.
-<to be read again> 
-                   \hfil 
-l.140 	
-       
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
-
- []
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \hfil 
-l.179 1	\[
-          
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-[3]
-! Missing number, treated as zero.
-<to be read again> 
-                   \hfil 
-l.198 	\subsubsection
-                     {Hadamard gate}\ \ \ \
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-[4]
-! Missing number, treated as zero.
-<to be read again> 
-                   \hfil 
-l.232 	 \begin{equation}
-                        
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-[5]
-! Missing number, treated as zero.
-<to be read again> 
-                   \hfil 
-l.238 	\section
-               {Creation of a superposition}
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
+[2] [3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--250
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--252
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--256
+Underfull \hbox (badness 10000) in paragraph at lines 244--246
 
  []
 
-! Missing number, treated as zero.
-<to be read again> 
-                   \hfil 
-l.258 	\[
-         
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-[7]
-! Missing number, treated as zero.
-<to be read again> 
-                   \hfil 
-l.297 	\subsection
-                  {Universal Hadamard}
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-[8]
-! Missing number, treated as zero.
-<to be read again> 
-                   \hfil 
-l.300 \end{document}
-                    
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-[9]
-
-! LaTeX Error: \begin{spacing} on input line 45 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.300 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-(Bachelor.aux)
+[5] [6] (Bachelor.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
- )
-(\end occurred inside a group at level 2)
-
-### semi simple group (level 2) entered at line 45 (\begingroup)
-### semi simple group (level 1) entered at line 45 (\begingroup)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 18179 strings out of 474423
- 344065 string characters out of 5741718
- 1939496 words of memory out of 5000000
- 40204 multiletter control sequences out of 15000+600000
- 574601 words of font info for 81 fonts, out of 8000000 for 9000
+ 17767 strings out of 474423
+ 337253 string characters out of 5741718
+ 1943496 words of memory out of 5000000
+ 39797 multiletter control sequences out of 15000+600000
+ 573823 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,16n,93p,1424b,785s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\vadim\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/
-ec/dpi600\ecbx1200.pk> <C:\Users\vadim\AppData\Local\MiKTeX\fonts/pk/ljfour/jkn
-appen/ec/dpi600\ecbx1000.pk> <C:\Users\vadim\AppData\Local\MiKTeX\fonts/pk/ljfo
-ur/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\vadim\AppData\Local\MiKTeX\fonts/p
-k/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\vadim\AppData\Local\MiKTeX\f
-onts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\vadim\AppData\Local\Mi
-KTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\vadim\AppData\Lo
-cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/vadim/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/va
-dim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:
-/Users/vadim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi1
-0.pfb><C:/Users/vadim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmmi5.pfb><C:/Users/vadim/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmmi7.pfb><C:/Users/vadim/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmr10.pfb><C:/Users/vadim/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/vadim/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/vadim/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/vadim/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/vadim/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/
-vadim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.
-pfb>
-Output written on Bachelor.pdf (13 pages, 247943 bytes).
+ 84i,17n,93p,1424b,716s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\vadim\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx
+1200.pk> <C:\Users\vadim\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecbx1000.pk> <C:\Users\vadim\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecti1000.pk> <C:\Users\vadim\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecbx1440.pk> <C:\Users\vadim\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\vadim\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\vadim\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/vadim/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/vadim/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/vadim/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/User
+s/vadim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb>
+<C:/Users/vadim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+mi7.pfb><C:/Users/vadim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb><C:/Users/vadim/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmr5.pfb><C:/Users/vadim/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmr7.pfb><C:/Users/vadim/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/vadim/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/vadim/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/vadim/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Bachelor.pdf (10 pages, 247767 bytes).
 PDF statistics:
- 396 PDF objects out of 1000 (max. 8388607)
+ 394 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

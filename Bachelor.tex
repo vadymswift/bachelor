@@ -1,12 +1,5 @@
 \documentclass[english,14pt,a4paper]{article}
 \usepackage{titlesec}
-\usepackage{enumitem}
-\usepackage{sectsty}
-\usepackage[english]{babel}
-\sectionfont{\flushright\huge\bfseries}
-\subsectionfont{\large\bfseries}
-
-
 \usepackage[T1]{fontenc}
 \usepackage{babel}
 \usepackage{graphicx}
@@ -16,8 +9,10 @@
 \usepackage{qcircuit}
 \usepackage{braket}
 \usepackage{setspace}
-\usetikzlibrary{arrows.meta}
 \usepackage{titlesec}
+\usepackage{avant}
+\usetikzlibrary{arrows.meta}
+
 
 \title{How to create superposition of quantum states?}
 \author{Vadym Shvydkyi}
@@ -38,11 +33,11 @@
 	
 	We know that the ability of quantum systems to be in a superposition of states with different mechanical values is the alpha and omega of the difference between quantum and classical systems. But how to prepare such a superposition of states \textit{X} and \textit{Y}, if we have a system in state \textit{X} and a system in state \textit{Y}? We will find the answer together in this work.
 	
-	\textbf{KEYWORDS:} private quantum channel, weak randomness, unitary k-designs
+	\textbf{KEYWORDS:} quantum-information, quantum-mechanics, quantum-computer, superposition, quantum-states
 	\pagebreak
 	\end{spacing}
 	\pagebreak
-	\begin{spacing}{1.5}
+
 	\section*{Abstrakt}
 	\begin{spacing}{1.5}
 		\textit{Autor:} Vadym Shvydkyi \\
@@ -53,15 +48,15 @@
 		\textit{Fakulta:} Fakulta matematiky, fyziky a informatiky \\
 		\textit{Školiteľ:} doc. Mgr. Mário Ziman, PhD. \\
 		
-		We know that the ability of quantum systems to be in a superposition of states with different mechanical values is the alpha and omega of the difference between quantum and classical systems. But how to prepare such a superposition of states \textit{X} and \textit{Y}, if we have a system in state \textit{X} and a system in state \textit{Y}? We will find the answer together in this work.
+		Vieme, že schopnosť kvantových systémov byť v superpozícii stavov s rôznymi mechanickými hodnotami, je alfou a omegou rozdielu medzi kvantovými a klasickými systémami. Ako však takúto superpozíciu stavov \textit{X} a \textit{Y} pripraviť, ak máme k dispozícii systém v stave \textit{X} a systém v stave \textit{Y}? Odpoveď spolu nájdeme v tejto práci.
 		
-		\textbf{KEYWORDS:} private quantum channel, weak randomness, unitary k-designs
+		\textbf{KEYWORDS:} kvantové informácie, kvantová mechanika, kvantový počítač, superpozícia, kvantové stavy
 		\pagebreak
 	\end{spacing}
 	
 	\tableofcontents
 	\pagebreak
-	\pagenumbering{arabic	}
+	\pagenumbering{arabic}
 	\section{Introduction to quantum information science}
 	\subsection{Qubit} \ \ \ \
 	First of all, let us introduce such a concept as a \textit{qubit}. If in classical computer science we used either only \textit{0} or only \textit{1} to perform calculations, store and transmit information, in quantum computer science we can use superposition of 0 or 1. In Dirac notation we can describe a qubit as follows:
@@ -107,7 +102,7 @@
 	We can disregard the factor $e^{i\phi}$ since we have no way to measure it. So finally we can characterize the qubit as follows:
 	\begin{equation}
 		\ket{\psi} = \cos(\frac{\eta}{2})| 0 \rangle + \sin(\frac{\eta}{2})e^{i\theta}| 1 \rangle
-	\end{equation}  
+	\end{equation}
 	This form can be shown as a unit vector on the sphere. This sphere, called the Bloch sphere. Since $\ket{0}$ and $\ket{1}$ are a basis, we can characterize the state vector as a vector, namely
 	\[
 		\ket{\psi} = \alpha \ket{0} + \beta\ket{1} \equiv 
@@ -115,7 +110,7 @@
 	\]
 	
 	If we have two qubits, each of which has its own computational basis, then the qubit that characterizes the whole system belongs to the vector space that was obtained as a result of the Cartesian product of the first two vector spaces, and the basis of the new vector space forms a new computational basis for the whole system. Or in the formalism of quantum mechanics if we have \textit{n} qubits, the whole system is describe be the cubit $\ket{\psi_{1 \ldots n}}$:
-	
+	{}
 	\begin{equation}
 		\ket{\psi_{1 \ldots n}} = \ket{\psi_1} \otimes \ket{\psi_2} \otimes \ldots \otimes \ket{\psi_n} 
 	\end{equation}
@@ -123,7 +118,7 @@
 	\subsection{Quantum Circuits and Quantum Gates}
 	
 	\ \ \ \ The device, which we can call a quantum computer we can describe as a \textit{quantum circuit}, which consists of \textit{registers} and \textit{quantum gates}. In the figure we can see an example of a quantum circuit for Deutsch's algorithm. Quantum gates by analogy with classical computers can be represented as logic elements that act on a qubit and as a result of measurements we perform calculations on a quantum computer.
-	
+	{}
 	\begin{figure}[!htbp] %Deutsch
 		\[
 		\Qcircuit @C=1em @R=.7em {
@@ -134,10 +129,7 @@
 		\caption{Deutsch's algorithm}
 		\label{deutsch}
 	\end{figure}
-	
-	
-	According to the postulate of quantum theory that the evolution of a quantum system in time is described by a \textit{unitary operator}, so the matrix which represents this operator must be unitary. Consider in detail these matrices. We know that these are 2x2 matrices that are unitary. More generally, if a quantum gate acts on multiple registers, i.e. on multiple qubits, then it is a matrix $2^n\text{x}2^n$, which belongs to the $\text{SU}(2^n)$. The qubit we obtained after the quantum gate action is expressed as the multiplication of the operator by the qubit, $\ket{\psi'} = U \ket{\psi}$. \\
-	
+	According to the postulate of quantum theory that the evolution of a quantum system in time is described by a \textit{unitary operator}, so the matrix which represents this operator must be unitary. Consider in detail these matrices. We know that these are 2x2 matrices that are unitary. More generally, if a quantum gate acts on multiple registers, i.e. on multiple qubits, then it is a matrix $2^n\text{x}2^n$, which belongs to the $\text{SU}(2^n)$. The qubit we obtained after the quantum gate action is expressed as the multiplication of the operator by the qubit, $\ket{\psi'} = U \ket{\psi}$. 	
 	Here are a few systems that can be described as qubits: 
 	\begin{table}[h]
 		\centering
@@ -149,12 +141,10 @@
 			
 			Photon polarization & $\ket{\text{horizontal}}$, $\ket{\text{vertical}}$ \\
 			
-			Two-level atom & $\ket{\text{groundstate}}$, $\ket{\text{exitedstate}}$ \\ 
+			Two-level atom & $\ket{\text{ground state}}$, $\ket{\text{exited state}}$ \\ 
 			\hline
 		\end{tabular}
 	\end{table}
-	
-	
 	\subsection{Density Matrix}
 	Suppose we have a set of states $\{\ket{\psi_i}\}$ and $\{p_i\}$ is the a set of probabilities, where the probability that we are in the state $\ket{\psi_j}$ is $p_j$. For this case, let us find the expectation value of some observable $A$. So it could be describe by 
 	
@@ -175,8 +165,8 @@
 	
 	The density matrix can also be applied in order to make quantum computations. For this purpose let's consider how quantum gates act on the density matrix. If we have the state of $\ket{\psi}$ and after the action of a quantum gate represented in the form of a unitary operator $U$, we obtain the following equality: $\ket{\psi} \rightarrow U\ket{\psi}$ and $\ket{\psi}\bra{\psi} = \rho \rightarrow U\rho U^{\dag}$
 	If we have a mixed state then in order for us to perform computation on each register, we need to split the density matrix for each register. 	
-	Suppose we have a set of registers $\{i\}$ and each of them is described by a Hilbert space $\mathcal{H}_i$ having a basis $\{\ket{j}\}_i$ and the whole quantum system is described by a density matrix $\rho  \in \prod_i \mathcal{H}_i^2$ then in order to obtain the density matrix $\rho_k$ of one register we use a partial trace of the matrix, which is defined in this way:
-1	\[
+	
+	Suppose we have a set of registers $\{i\}$ and each of them is described by a Hilbert space $\mathcal{H}_i$ having a basis $\{\ket{j}\}_i$ and the whole quantum system is described by a density matrix $\rho  \in \prod_i \mathcal{H}_i^2$ then in order to obtain the density matrix $\rho_k$ of one register we use a partial trace of the matrix, which is defined in this way:	\[
 	\rho_k = \sum_{\tilde{j}} \bra{\tilde{j}}_k \rho \ket{\tilde{j}}_k
 	\]  
 	in this case $\ket{\tilde{j}}$ is a basis that describes a Hilbert space $\prod_{i \neq k} \mathcal{H}_i^2 $ 
@@ -293,8 +283,6 @@
 		\caption{Bloch sphere for $\ket{\Psi} $}
 		\label{fig:blochsphere2}
 	\end{figure} 
-	Let us consider in detail the superposition on the example of simple states, i.e. $\ket{0}$ and $\ket{1}$. The Hadamard operator is used to create a superposition of these basic states, which we discussed in the introduction chapter. This operator can be expressed in terms of Pauly matrices as follows: $ H = \frac{X + Z}{\sqrt{2}}$. From this notation, we see that the Hadamard operator is half a full rotation about the x-axis and half a full rotation about the z-axis.
+	Let us consider in detail the superposition on the example of simple states, i.e. $\ket{0}$ and $\ket{1}$. The Hadamard operator is used to create a superposition of these basic states, which we discussed in the introduction chapter. This operator can be expressed in terms of Pauly matrices as follows: $ H = \frac{X + Z}{\sqrt{2}}$. From this notation, we see that the Hadamard operator is half a full rotation about the x-axis and half a full rotation about the z-axis
 	\subsection{Universal Hadamard}
-	
-		
 \end{document}

@@ -1,16 +1,16 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {1}Introduction to quantum information science}{\@arabic \c@page }{}%
-\contentsline {subsection}{\numberline {1.1}Qubit}{\@arabic \c@page }{}%
-\contentsline {subsection}{\numberline {1.2}Quantum Circuits and Quantum Gates}{\@arabic \c@page }{}%
-\contentsline {subsection}{\numberline {1.3}Density Matrix}{\@arabic \c@page }{}%
-\contentsline {subsubsection}{\numberline {1.3.1}Properties of density matrix}{\@arabic \c@page }{}%
-\contentsline {subsubsection}{\numberline {1.3.2}Bures Fidelity}{\@arabic \c@page }{}%
-\contentsline {subsection}{\numberline {1.4}Examples of quantum gates}{\@arabic \c@page }{}%
-\contentsline {subsubsection}{\numberline {1.4.1}X, Y, Z gates}{\@arabic \c@page }{}%
-\contentsline {subsubsection}{\numberline {1.4.2}Hadamard gate}{\@arabic \c@page }{}%
-\contentsline {subsubsection}{\numberline {1.4.3}CNOT gate}{\@arabic \c@page }{}%
-\contentsline {subsubsection}{\numberline {1.4.4}Rotation Operators about the Bloch basis}{\@arabic \c@page }{}%
-\contentsline {section}{\numberline {2}Creation of a superposition}{\@arabic \c@page }{}%
-\contentsline {subsection}{\numberline {2.1}Problem formulation}{\@arabic \c@page }{}%
-\contentsline {subsection}{\numberline {2.2}Respectively Position of a States on the Bloch Sphere}{\@arabic \c@page }{}%
-\contentsline {subsection}{\numberline {2.3}Universal Hadamard}{\@arabic \c@page }{}%
+\contentsline {section}{\numberline {1}Introduction to quantum information science}{1}{}%
+\contentsline {subsection}{\numberline {1.1}Qubit}{1}{}%
+\contentsline {subsection}{\numberline {1.2}Quantum Circuits and Quantum Gates}{2}{}%
+\contentsline {subsection}{\numberline {1.3}Density Matrix}{2}{}%
+\contentsline {subsubsection}{\numberline {1.3.1}Properties of density matrix}{2}{}%
+\contentsline {subsubsection}{\numberline {1.3.2}Bures Fidelity}{3}{}%
+\contentsline {subsection}{\numberline {1.4}Examples of quantum gates}{3}{}%
+\contentsline {subsubsection}{\numberline {1.4.1}X, Y, Z gates}{3}{}%
+\contentsline {subsubsection}{\numberline {1.4.2}Hadamard gate}{3}{}%
+\contentsline {subsubsection}{\numberline {1.4.3}CNOT gate}{4}{}%
+\contentsline {subsubsection}{\numberline {1.4.4}Rotation Operators about the Bloch basis}{4}{}%
+\contentsline {section}{\numberline {2}Creation of a superposition}{5}{}%
+\contentsline {subsection}{\numberline {2.1}Problem formulation}{5}{}%
+\contentsline {subsection}{\numberline {2.2}Respectively Position of a States on the Bloch Sphere}{5}{}%
+\contentsline {subsection}{\numberline {2.3}Universal Hadamard}{6}{}%
