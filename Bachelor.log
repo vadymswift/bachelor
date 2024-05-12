@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.31)  9 MAY 2024 15:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.31)  12 MAY 2024 12:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -710,44 +710,39 @@ ii stavov s rôznymi
 \openout5 = `Bachelor.toc'.
 
  [4] <xymatrix 5x2 577> [1]
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
-[2] [3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 235--236
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--240
+[2] [3] [4] <xymatrix 7x2 717> [5]
+Underfull \hbox (badness 10000) in paragraph at lines 285--285
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
+Underfull \hbox (badness 10000) in paragraph at lines 285--285
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 244--246
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 293--295
 
  []
 
-[5] [6] (Bachelor.aux)
+[7] [8] (Bachelor.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 17767 strings out of 474423
- 337253 string characters out of 5741718
- 1943496 words of memory out of 5000000
- 39797 multiletter control sequences out of 15000+600000
+ 17793 strings out of 474423
+ 337324 string characters out of 5741718
+ 1944496 words of memory out of 5000000
+ 39823 multiletter control sequences out of 15000+600000
  573823 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,17n,93p,1424b,716s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,25n,93p,1424b,858s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\vadim\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx
 1200.pk> <C:\Users\vadim\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\ecbx1000.pk> <C:\Users\vadim\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
@@ -769,9 +764,9 @@ ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/vadim/AppData/Local/Programs/M
 iKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/vadim/AppData/Local/Pr
 ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/vadim/AppData/
 Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Bachelor.pdf (10 pages, 247767 bytes).
+Output written on Bachelor.pdf (12 pages, 258182 bytes).
 PDF statistics:
- 394 PDF objects out of 1000 (max. 8388607)
+ 401 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
