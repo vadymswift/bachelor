@@ -1,0 +1,360 @@
+\documentclass[english,14pt,a4paper]{article}
+\usepackage{titlesec}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{amssymb}
+\usepackage{qcircuit}
+\usepackage{braket}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{avant}
+\usepackage{comment}
+\usetikzlibrary{arrows.meta}
+
+
+\title{How to create superposition of quantum states?}
+\author{Vadym Shvydkyi}
+
+\begin{document}
+	\pagenumbering{roman}
+	\maketitle
+	\pagebreak
+	\section*{Abstract}
+	\begin{spacing}{1.5}
+	\textit{Author:} Vadym Shvydkyi \\
+	\textit{Title:} How to create superposition of quantum states? \\
+	\textit{Type of thesis:} Bachelor thesis \\
+	\textit{Study Program:} Physics \\
+	\textit{University:} Comenius University in Bratislava \\
+	\textit{Faculty:} Faculty of Mathematics, Physics and Informatics \\
+	\textit{Advisor:} doc. Mgr. Mário Ziman, PhD. \\
+	
+	We know that the ability of quantum systems to be in a superposition of states with different mechanical values is the alpha and omega of the difference between quantum and classical systems. But how to prepare such a superposition of states \textit{X} and \textit{Y}, if we have a system in state \textit{X} and a system in state \textit{Y}? We will find the answer together in this work.
+	
+	\textbf{KEYWORDS:} quantum-information, quantum-mechanics, quantum-computer, superposition, quantum-states
+	\pagebreak
+	\end{spacing}
+	\pagebreak
+
+	\section*{Abstrakt}
+	\begin{spacing}{1.5}
+		\textit{Autor:} Vadym Shvydkyi \\
+		\textit{Názov párce:} Ako spraviť superpozíciu kvantových stavov? \\
+		\textit{Typ práce:} Bakalárska práca \\
+		\textit{Štúdijný program:} Fyzika \\
+		\textit{Škola:} Univerzita Komenského v Bratislava \\
+		\textit{Fakulta:} Fakulta matematiky, fyziky a informatiky \\
+		\textit{Školiteľ:} doc. Mgr. Mário Ziman, PhD. \\
+		
+		Vieme, že schopnosť kvantových systémov byť v superpozícii stavov s rôznymi mechanickými hodnotami, je alfou a omegou rozdielu medzi kvantovými a klasickými systémami. Ako však takúto superpozíciu stavov \textit{X} a \textit{Y} pripraviť, ak máme k dispozícii systém v stave \textit{X} a systém v stave \textit{Y}? Odpoveď spolu nájdeme v tejto práci.
+		
+		\textbf{KEYWORDS:} kvantové informácie, kvantová mechanika, kvantový počítač, superpozícia, kvantové stavy
+		\pagebreak
+	\end{spacing}
+	
+	\tableofcontents
+	\pagebreak
+	\pagenumbering{arabic}
+	\section{Introduction to quantum information science}
+	\subsection{Qubit} \ \ \ \
+	First of all, let us introduce such a concept as a \textit{qubit}. If in classical computer science we used either only \textit{0} or only \textit{1} to perform calculations, store and transmit information, in quantum computer science we can use superposition of 0 or 1. In Dirac notation we can describe a qubit as follows:
+	\begin{equation}
+		\ket{\psi}  = \alpha | 0 \rangle + \beta | 1 \rangle
+	\end{equation}
+	
+	The numbers $\alpha$ and $\beta$ are coplex numbers that represent the probability of measuring state $| 0 \rangle $ or state $| 1 \rangle $. In turn, $| 0 \rangle $ and $| 1 \rangle $ form the computational basis of states, which is an orthonormal basis in the given vector space. 
+	
+	The numbers $\alpha$ and $\beta$ satisfy this equality $|\alpha|^2 + |\beta|^2 = 1$, so we can rewrite qbit in such form:
+	\begin{equation}
+		| \psi \rangle = e^{i\phi}( \cos(\frac{\eta}{2})| 0 \rangle + \sin(\frac{\eta}{2})e^{i\theta}| 1 \rangle)
+	\end{equation} 
+	 
+	\begin{figure}[!htbp] %Bloch sphere
+		\centering
+		\begin{tikzpicture}[line cap=round, line join=round, >=Triangle]
+			\clip(-2.19,-2.49) rectangle (2.66,2.58);
+			\draw [shift={(0,0)}, lightgray, fill, fill opacity=0.1] (0,0) -- (56.7:0.4) arc (56.7:90.:0.4) -- cycle;
+			\draw [shift={(0,0)}, lightgray, fill, fill opacity=0.1] (0,0) -- (-135.7:0.4) arc (-135.7:-33.2:0.4) -- cycle;
+			\draw(0,0) circle (2cm);
+			\draw [rotate around={0.:(0.,0.)},dash pattern=on 3pt off 3pt] (0,0) ellipse (2cm and 0.9cm);
+			\draw (0,0)-- (0.70,1.07);
+			\draw [->] (0,0) -- (0,2);
+			\draw [->] (0,0) -- (-0.81,-0.79);
+			\draw [->] (0,0) -- (2,0);
+			\draw [dotted] (0.7,1)-- (0.7,-0.46);
+			\draw [dotted] (0,0)-- (0.7,-0.46);
+			\draw (-0.08,-0.3) node[anchor=north west] {$\theta$};
+			\draw (0.01,0.9) node[anchor=north west] {$\eta $};
+			\draw (-1.01,-0.72) node[anchor=north west] {$\mathbf {\hat{x}}$};
+			\draw (2.07,0.3) node[anchor=north west] {$\mathbf {\hat{y}}$};
+			\draw (-0.5,2.6) node[anchor=north west] {$\mathbf {\hat{z}=|0\rangle}$};
+			\draw (-0.4,-2) node[anchor=north west] {$-\mathbf {\hat{z}=|1\rangle}$};
+			\draw (0.4,1.65) node[anchor=north west] {$|\psi\rangle$};
+			\scriptsize
+			\draw [fill] (0,0) circle (1.5pt);
+			\draw [fill] (0.7,1.1) circle (0.5pt);
+		\end{tikzpicture}
+		\caption{Bloch sphere for $| \psi \rangle $}
+		\label{fig:blochsphere1}
+	\end{figure} 
+	We can disregard the factor $e^{i\phi}$ since we have no way to measure it. So finally we can characterize the qubit as follows:
+	\begin{equation}
+		\ket{\psi} = \cos(\frac{\eta}{2})| 0 \rangle + \sin(\frac{\eta}{2})e^{i\theta}| 1 \rangle
+	\end{equation}
+	This form can be shown as a unit vector on the sphere. This sphere, called the Bloch sphere. Since $\ket{0}$ and $\ket{1}$ are a basis, we can characterize the state vector as a vector, namely
+	\[
+		\ket{\psi} = \alpha \ket{0} + \beta\ket{1} \equiv 
+		\begin{pmatrix} \alpha \\ \beta \\ \end{pmatrix}  
+	\]
+	
+	If we have two qubits, each of which has its own computational basis, then the qubit that characterizes the whole system belongs to the vector space that was obtained as a result of the Cartesian product of the first two vector spaces, and the basis of the new vector space forms a new computational basis for the whole system. Or in the formalism of quantum mechanics if we have \textit{n} qubits, the whole system is describe be the cubit $\ket{\psi_{1 \ldots n}}$:
+	{}
+	\begin{equation}
+		\ket{\psi_{1 \ldots n}} = \ket{\psi_1} \otimes \ket{\psi_2} \otimes \ldots \otimes \ket{\psi_n} 
+	\end{equation}
+	
+	\subsection{Quantum Circuits and Quantum Gates}
+	
+	\ \ \ \ The device, which we can call a quantum computer we can describe as a \textit{quantum circuit}, which consists of \textit{registers} and \textit{quantum gates}. In the figure we can see an example of a quantum circuit for Deutsch's algorithm. Quantum gates by analogy with classical computers can be represented as logic elements that act on a qubit and as a result of measurements we perform calculations on a quantum computer.
+	{}
+	\begin{figure}[!htbp] %Deutsch
+		\[
+		\Qcircuit @C=1em @R=.7em {
+			\lstick{\ket{0}} & \gate{H} & \multigate{1}{U_f} & \gate{H} & \qw \\
+			\lstick{\ket{1}} & \gate{H} & \ghost{U_f} & \qw & \qw \\
+		}
+		\]
+		\caption{Deutsch's algorithm}
+		\label{deutsch}
+	\end{figure}
+	According to the postulate of quantum theory that the evolution of a quantum system in time is described by a \textit{unitary operator}, so the matrix which represents this operator must be unitary. 
+	
+	Consider in detail these matrices. We know that these are 2x2 matrices that are unitary. More generally, if a quantum gate acts on multiple registers, i.e. on multiple qubits, then it is a matrix $2^n\text{x}2^n$, which belongs to the $\text{SU}(2^n)$. The qubit we obtained after the quantum gate action is expressed as the multiplication of the operator by the qubit, $\ket{\psi'} = U \ket{\psi}$. 	
+	Here are a few systems that can be described as qubits: 
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{|c|c|} 
+			\hline
+			Degree of freedom & Possible basis states $\ket{0}$, $\ket{1} $\\ 
+			\hline
+			Spin $\frac12$  & $\ket{m = \frac12}$, $\ket{m = - \frac12}	$  \\ 
+			
+			Photon polarization & $\ket{\text{horizontal}}$, $\ket{\text{vertical}}$ \\
+			
+			Two-level atom & $\ket{\text{ground state}}$, $\ket{\text{exited state}}$ \\ 
+			\hline
+		\end{tabular}
+	\end{table}
+	\subsection{Density Matrix}
+	Suppose we have a set of states $\{\ket{\psi_i}\}$ and $\{p_i\}$ is the a set of probabilities, where the probability that we are in the state $\ket{\psi_j}$ is $p_j$. For this case, let us find the expectation value of some observable $A$. So it could be describe by 
+	
+	\[
+	\left\langle A \right\rangle = \Sigma_i p_i \bra{\psi _i} A \ket{\psi_i} = Tr(A \rho) = \bra{\psi_i} A \ket{\psi_i}
+	\]
+	here was introduced the density matrix 
+	\[
+	\rho = \Sigma_i p_i \ket{\psi_i} \bra{\psi_i}
+	\]
+	
+	\subsubsection*{Properties of density matrix} 
+	1. $Tr(\rho) = 1$ \\
+	2. $\rho = \rho^{\dag}$, the density operator is hermitian.  \\
+	3. $\bra{\psi}\rho\ket{\psi} \geq 0  $, a density matrix is positive for all $\ket{\psi}$ \\
+	The use of the density matrix can be convenient since it can describe also a quantum system of mixed states. Besides by means of the density matrix one can easily understand whether a state is a mixed state or not. 
+	
+	\textbf{Theorem:} \textit{A quantum state is pure if and only if $Tr(\rho^2) = 1$} \\
+	
+	The density matrix can also be applied in order to make quantum computations. For this purpose let's consider how quantum gates act on the density matrix. If we have the state of $\ket{\psi}$ and after the action of a quantum gate represented in the form of a unitary operator $U$, we obtain the following equality: $\ket{\psi} \rightarrow U\ket{\psi}$ and $\ket{\psi}\bra{\psi} = \rho \rightarrow U\rho U^{\dag}$
+	If we have a mixed state then in order for us to perform computation on each register, we need to split the density matrix for each register. 	
+	
+	Suppose we have a set of registers $\{i\}$ and each of them is described by a Hilbert space $\mathcal{H}_i$ having a basis $\{\ket{j}\}_i$ and the whole quantum system is described by a density matrix $\rho  \in \prod_i \mathcal{H}_i^2$ then in order to obtain the density matrix $\rho_k$ of one register we use a partial trace of the matrix, which is defined in this way:	\[
+	\rho_k = \sum_{\tilde{j}} \bra{\tilde{j}}_k \rho \ket{\tilde{j}}_k
+	\]  
+	in this case $\ket{\tilde{j}}$ is a basis that describes a Hilbert space $\prod_{i \neq k} \mathcal{H}_i^2 $ 
+	
+	\subsubsection*{Bures Fidelity} \ \ \ \
+	\textit{Bures fidelity} offers a precise assessment of the distinguishability between two density matrices. In this section, we will employ Bures fidelity to validate the findings from the preceding section. The fidelity is defined as: 
+	\begin{equation}
+		\mathcal{F}(\rho_1, \rho_2) = tr(\rho_1^{1/2}\rho_2\rho_1^{1/2})
+	\end{equation}
+	
+	The value of $\mathcal{F}$ lies between $0$ and $1$, where $\mathcal{F} = 1$ denotes that the states are identical. For the pure state $\rho_1 = \ket{\psi}\bra{\psi}$ we can define the fidelity \[\mathcal{F} = \bra{\psi}\rho_2 \ket{\psi}\].
+	
+	Let us posit that our algorithm uniformly accepts all input states, thereby rendering it applicable for computations in the absence of prior knowledge regarding the original qubit state. This assumption aligns with a uniform probability distribution across the qubit's state space, often represented by the Bloch sphere. Consequently, the fidelity $\mathcal{F}$ emerges as a measure of copy quality, denoting the average overlap between the copied state and the input state.
+	\[ \mathcal{F} = \int d\Omega \bra{\psi}\rho\ket{\psi} =\frac{1}{4\pi} \int_0^{2\pi}d\phi \int_0^{\pi} d\theta \bra{\psi}\rho\ket{\psi} \sin{\theta}\]
+	
+	We would also introduce some new concepts to define the distance between states and to estimate the probability of getting a state close to the desired state during the measurement.  
+	
+	\textbf{Definition} The trace norm of an operator $M$ is defined as \[ ||M|| \equiv Tr{\{\sqrt{M^{\dag}M}}\}\]
+	
+	And now we would like to focus attention on some statements which will help us to come to the concept of fidelity and to perform calculations for general states expressed by the density matrix more easily. Further we introduce such a term as distance between states $\rho$ and $\sigma$ which is defined as follows: 
+	\[\mathcal{D}(\rho, \sigma) = \frac12 ||\rho - \sigma||\]
+	Thus having a relationship between distance $\mathcal{D}(\rho, \sigma)$ and $\mathcal{F}(\rho, \sigma)$, which is expressed as follows $\mathcal{D}(\rho, \sigma) + \mathcal{F}(\rho, \sigma) = 1$ we can get a result that is not so mathematically consuming (which will be shown directly during the calculations in the main part of the paper) \[\mathcal{F}(\rho, \sigma) = 1 - \frac12 ||\rho - \sigma||\]
+	
+	
+	\subsection{Examples of quantum gates} \ \ \ \ 
+	Here we would like to provide examples of quantum gates that we will use in the future. Some of them were obtained directly and from the rotation matrices or derived from the truth table for each case. 
+	
+	\subsubsection*{X, Y, Z gates}\ \ \ \
+	\(X  \ Y \ Z\) quantum gates represent a rotation about the $\hat{x}, \ \hat{y}, \ \hat{z}$ axis respectively on the Bloch sphere. The matrices of these operators are Pauli matrices for each of the axes. 
+	
+	\subsubsection*{Hadamard gate}\ \ \ \
+	The Hadamard operator will be discussed more depth in later chapters, as it is used to create a superposition of the simplest states 0 and 1 behind such a rule. 
+	
+	\[
+		H \ket{0} = \frac{\ket{0} + \ket{1}}{\sqrt{2}} \equiv \ket{+}, \ H \ket{1} = \frac{\ket{0} - \ket{1}}{\sqrt{2}} \equiv \ket{-}
+	\]
+	\begin{equation}
+	H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}
+	\end{equation}
+	
+	\subsubsection*{CNOT gate}\ \ \ \
+	This operator is the analog of CNOT in classical computers. It can be described by the following rule: $\ket{xy} \rightarrow \ket{x (x \oplus y)}; x, y \in \mathbb{Z}_2$, where the $x$ is \textit{control qubit} and $y$ is \textit{target qubit}. Let $D$ be an operator for a CNOT gate then we can describe it in this way $\ket{0}\bra{0} \otimes \mathbb{I} + \ket{1}\bra{1} \otimes X$. Here $X$ operator plays the role of logical element \textit{Not}. In this way we can create a generic controlled operator \textit{C-A} which applied on target qubit in such way: $\ket{0}\bra{0} \otimes \mathbb{I} + \ket{1}\bra{1} \otimes A $
+	\subsection{Rotation Operators about the Bloch basis}\ \ \ \
+	Since the Lie algebra of the group $\text{SU}(2)$ is isomorphic to the Lie algebra of the group $\text{SO}(3)$, it is a very useful fact that operators can be represented as rotations of the Bloch sphere. For each axis we have an operator represented in this form:
+	\[
+		R_{\hat{x}}(\phi) = e^{-i\frac{\phi}{2}X} = \begin{pmatrix}
+			\cos(\frac{\phi}{2}) & -i\sin(\frac{\phi}{2}) \\
+			-i\sin(\frac{\phi}{2}) & \cos(\frac{\phi}{2}) \\
+		\end{pmatrix}	
+	\]
+	\[
+	R_{\hat{y}}(\phi) = e^{-i\frac{\phi}{2}Y} = \begin{pmatrix}
+		\cos(\frac{\phi}{2}) & -\sin(\frac{\phi}{2}) \\
+		\sin(\frac{\phi}{2}) & \cos(\frac{\phi}{2}) \\
+	\end{pmatrix}	
+	\]
+	\[
+	R_{\hat{z}}(\phi) = e^{-i\frac{\phi}{2}Z} = \begin{pmatrix}
+		e^{-i\frac{\phi}{2}} & 0 \\
+		0 &  e^{i\frac{\phi}{2}}\\
+	\end{pmatrix}	
+	\]
+	
+	That is, in general we can represent a unitary operator as a rotation operator in three-dimensional space by $\phi$ around an axis in the direction of the unit vector $\hat{n}$.
+	 \begin{equation}
+	 R_{\hat{n}}(\phi) = e^{-\frac{i}{2}\phi \hat{n}\cdot \vec{\sigma}}
+	\end{equation}
+	\subsection{Preparation of quantum states}
+	Often in order to perform quantum calculations not only operators are used but also quantum states which have been prepared independent of the given state.  In order to prepare any state $\ket{\Xi} = A \ket{00} + B \ket{01} + C \ket{10} + D\ket{11}$. Accordingly, if this condition is normalized. In order for us to create this state, the machine that is shown in the \textit{Figure 3} is used.
+	
+	Quantum gates such as $R$ and $CNOT$ are shown in this circuit. The operator R is single-qubit rotation operator which acts on basis as follows:
+	\[\hat{R}_a(\phi)\ket{0} = \cos(\phi)\ket{0}_a + \sin(\phi)\ket{1}_a\]
+	\[\hat{R}_a(\phi)\ket{1} = -\sin(\phi)\ket{0}_a + \cos(\phi)\ket{1}_a\]
+	In the figure, the controlled cubit noted with symbol "$\bullet$" by the symbol on register m and the target cubit on register m by the symbol "$\oplus$" . The correspondent operator to the CNOT gate is $P_{mn}$, which is defined by acting on the basis state as follows: 
+	\[P_{mn}\ket{0}_m\ket{0}_n \rightarrow  \ket{0}_m\ket{0}_n\]
+	\[P_{mn}\ket{0}_m\ket{1}_n \rightarrow  \ket{0}_m\ket{1}_n\]
+	\[P_{mn}\ket{1}_m\ket{0}_n \rightarrow  \ket{1}_m\ket{1}_n\]
+	\[P_{mn}\ket{1}_m\ket{1}_n \rightarrow  \ket{1}_m\ket{0}_n\]
+	Thus we can prepare the state of $\ket{\Xi}$ in this way: 
+	\[\ket{\Xi}_{mn} = R_m(\phi_3)P_{nm}R_n(\phi_2)P_{mn}R_m(\phi_1)\ket{0}_m\ket{0}_n \]
+
+	
+	\begin{figure}[!htbp] %Deutsch
+		\[
+		\Qcircuit @C=1em @R=.7em {
+			\lstick{\ket{0}_m} & \gate{R} & \ctrl{1} & \qw &\targ & \gate{R} & \qw\\
+			\lstick{\ket{0}_n} & \qw      & \targ    & \gate{R}&\ctrl{-1} & \qw &\qw\\
+		}
+		\]
+		\caption{Preparation of quantum states}
+		\label{prep}
+	\end{figure}
+	
+	
+	
+	\pagebreak
+	\section{Creation of a superposition} 
+	\ \ \ \
+	Quantum and classical computers have many fundamental differences that allow for greater computing power or for information to be transmitted in a more secure manner. In this paper, we will work on the aspect of what algorithms work to accelerate computational power. 
+	
+	For example, the well-known Deutsch algorithm uses quantum superposition to speed up computation by a factor of two since the computation is performed in several mathematical dimensions at a time. As the number of qubits increases, the computing power grows exponentially precisely because the number of states we can superposition grows.
+	
+	By creating a superposition from any state we can obtain a new basis in which it will be more convenient to perform calculations. It will also be possible to create more universal algorithms. Returning to the example with Deutsch's algorithm we can analyze the function that acts not only on $\{0, 1\}$ but also for the set of any state in binary code. 
+	
+	In this paper, we will explore the original idea of how a universal Hadamard could be realized, and consider the impossibility of creating such a machine. Then we will consider how this operator can be realized mathematically and state vectors on the Bloch sphere. Then, based on this mathematical aspect, we will formulate and analyze a machine that can create a state close to the desired one. 
+	
+	\subsection{Universal Hadamard Machine} \ \ \ \
+	Let us assume that we have at our disposal an arbitrary $\ket{\psi}$ state in a particular basis $\{\ket{0}, \ket{1}\}$, and we want to create a superposition state $\ket{\Psi}$ in which the probabilities of measuring state $\ket{\psi}$ and state $\ket{\psi^{\perp}}$, which is orthogonal to the given state, are equal
+	\[ \ket{\psi} = \alpha\ket{0} + \beta{\ket{1}}; \ \alpha = \cos(\frac{\theta}{2}), \ \beta = \sin(\frac{\theta}{2})e^{i\phi}\]
+	\[\ket{\psi^{\perp}} = \beta^{*}\ket{0} - \alpha^{*}\ket{1} = \sin(\frac{\theta}{2})e^{-i\phi}\ket{0} + \cos(\frac{\theta}{2})\ket{1}\]
+	\[\ket{\Psi} = \frac{\ket{\psi} + e^{i\varphi}\ket{\psi^{\perp}}}{\sqrt{2}}\]
+	Further we will use the following notations
+	\[ \ket{\pm_{\psi}} = \frac{\ket{\psi} \pm \ket{\psi^{\perp}}}{\sqrt{2}}\]
+	Even though a machine that would correspond to the $\ket{\psi} \rightarrow \frac{\ket{\psi} + \ket{\psi^{\perp}}}{\sqrt{2}}$ map is not possible due to the laws of quantum mechanics for an arbitrary state, it is still possible to create a machine that will satisfy this problem with some accuracy. In particular, universal Hadamard must be satisfied with the following requirements: \\
+	\textit{(i)}  The final state which we obtain in the result of acting th universal Hadamard machine is described by the density matrix $\rho^{out}$ and the density matrices $\{\rho_i^{out}\}$ for each register from $\{i\}$.\\
+	\textit{(ii)} If the \textit{a priori} information about given state is not available we can suppose that all pure states which we have in disposition all results of acting equally well. The method to realize this assumption is to calculate the fidelity between obtained state  for each register $\rho^{out}_i$ and state of ideal superposition $\sigma = \ket{\Psi}\bra{\Psi}$ by the equation
+	\[\mathcal{F}_i(\rho_i^{out}, \sigma) = 1 - \frac12 ||\rho_i^{out} - \sigma||\]\\
+	\textit{(iii)} In order to consider our machine successful, we consider that the fidelity of the Universal Hadamard must be maximal compared to any possible operator $U \in SU(2)$ acting in the corresponding Hilbert space $\mathcal{H}$
+	\[\mathcal{F}^{(UH)}(\rho^{out}, \sigma) = \max\{\mathcal{F}^{(U)}(\rho^{out}, \sigma), \forall U \in \mathcal{H}\}\]
+	
+	\subsection{Universal Hadamard Operator}
+	Let us consider the problem where we have an operator $\hat{H}$ which acts in such way
+	\[\hat{H}\ket{\psi}  = \frac{\ket{\psi} + e^{i\varphi}\ket{\psi^{\perp}}}{\sqrt{2}}\]
+	I propose to investigate the operator for acting on th basis $\{ \ket{0}, \ket{1}\}$
+	\[\hat{H}\ket{0} = \frac{\ket{0} + e^{i\varphi}\ket{1}}{\sqrt{2}}, \ \hat{H}\ket{1} = \frac{\ket{1} + e^{i\varphi}\ket{0}}{\sqrt{2}}\]
+	So now we can show the acting of such operator on a general state \[\ket{\psi} = \alpha\ket{1} + \beta\ket{1}\]
+		\[ \frac{\ket{\psi} + e^{i\varphi}\ket{\psi^{\perp}}}{\sqrt{2}} = \hat{H}\ket{\psi} = \hat{H}(\alpha \ket{0} + \beta\ket{1}) = \alpha\hat{H}\ket{0}  + \beta\hat{H}\ket{1}=\] \\ \[ = \alpha(\frac{\ket{0} + e^{i\varphi}\ket{1}}{\sqrt{2}}) + (\frac{\ket{1} + e^{i\varphi}\ket{0}}{\sqrt{2}}) =\] \\ \[ = \frac{(\alpha + \beta e^{i\varphi})\ket{0} + (\beta + \alpha e^{i\varphi}\ket{1})}{\sqrt{2}} \neq \frac{\ket{\psi} + e^{i\varphi}\ket{1}}{\sqrt{2}} \]
+	In these calculations we no longer see that this operator does not fulfill one of the points of the definition of an unitary operator, namely its linearity. And since the operator cannot be an unitary operator, this gate element can not be realized.
+
+	\subsection{Popa Muravia}	
+	Suppose we have the arbitrary state $\ket{\psi} = \alpha\ket{0} + \beta{\ket{1}} \equiv \begin{pmatrix} \alpha \\ \beta \end{pmatrix}$ and generally matrix $U = \begin{pmatrix} \cos(\eta) & -\sin(\eta) \\  \sin(\eta) & \cos(\eta) \end{pmatrix} \in SU(2), \ \eta \in [0, 2\pi]$. Here we would like to perform a calculation to find out the maximal fidelity for the general quantum gate.  
+	\[\ket{\psi'} = U\ket{\psi} = \begin{pmatrix} \cos(\eta) & -\sin(\eta) \\  \sin(\eta) & \cos(\eta)\end{pmatrix}\begin{pmatrix} \cos(\frac{\theta}{2}) \\ \sin(\frac{\theta}{2})e^{i\varphi} \end{pmatrix} =\]
+	\[= \begin{pmatrix} \cos(\eta)\cos(\frac{\theta}{2}) -\sin(\eta)\sin(\frac{\theta}{2})e^{i\varphi} \\  \sin(\eta)\cos(\frac{\theta}{2}) + \cos(\eta)\sin(\frac{\theta}{2})e^{i\varphi}\end{pmatrix}\]
+	\[\ket{+_{\psi}} = \frac{\ket{\psi} + \ket{\psi^{\perp}}}{\sqrt{2}}\]
+	\[\mathcal{F}(\ket{\psi'}\bra{\psi'}, \sigma) = \frac{1}{4\pi} \int_0^{\pi} \int_0^{2\pi}|\bra{\psi'}+_{\psi}\rangle|^2\sin(\theta)d\varphi d\theta\]
+	
+	
+	 
+	\subsection{Respectively Position of a States on the Bloch Sphere}\ \ \ \
+	As already described in Chapter 1.3.4 we can consider unitary operators as rotations of a unit vector on the Bloch sphere. This is why I think it is very relevant to study how one can represent the states of qubits on the flea sphere. \\
+	
+	Initially, we can denote the unit vector $\hat{n} = \cos(\theta)\sin(\eta) \hat{x} + \sin(\theta)\sin(\eta)\hat{y} + +\cos(\eta)\hat{z}$. This unit vector $\hat{n}$ represents the state $\ket{\psi} = \cos(\frac{\eta }{2})\ket{0} + \sin(\frac{\eta}{2}) e^{i\theta}\ket{1}$, the state $\ket{\psi^{\perp}}$ which s perpendicular to the state $\ket{\psi}$ is $\ket{\psi^{\perp}} = -\sin{\frac{\eta}{2}}e^{-i\theta} \ket{0} ++ \cos(\frac{\eta}{2})\ket{1}$, which suggests that the angles have been altered in this way: $ \eta \rightarrow \eta + \pi $ and $ \theta \rightarrow \theta$. So it is ease to see that vector $-\hat{n}$ is orthogonal to $\hat{n}$. Therefore, the 6 main directions $\pm \hat{x}, \ \pm \hat{y}, \ \pm \hat{z}$ can form the basis. If $\hat{z} \equiv \ket{0} \text{and} \ -\hat{z} \equiv \ket{1}$, $\pm \hat{x} \equiv \frac{\ket{0} \pm \ket{1}}{\sqrt{2}}$ which is also called $\ket{\pm}$. In addition, I think it should be clarified that these pairs of vectors are eigenvectors of the Pauli matrices of the corresponding axes. 
+	\[
+	\sigma_x = \ket{0}\bra{1} + \ket{1}\bra{0}
+	\]
+	\[
+	\sigma_y = -i\ket{0}\bra{1} + \ket{1}\bra{0}
+	\]
+	\[
+	\sigma_z = \ket{0}\ket{0} - \ket{1}\bra{1}
+	\]
+	
+	Since we already know that for the $\ket{\psi}$ cubit we can set the $\vec{\psi}$ vector on the Bloch sphere, then the vector $-\vec{\psi}$ represents $\ket{\psi^{\perp}}$ on a Bloch sphere. Based on this information we can describe our target state $\ket{\Psi} = \frac{\ket{\psi} + \ket{\psi^{\perp}}}{\sqrt{2}}$ as a vector $\vec{\Psi}$ that will be between $\vec{\psi}$ and $-\vec{\psi}$, as is shown on the picture. 
+	\begin{figure}[!htbp] %Bloch sphere
+		\centering
+		\begin{tikzpicture}[line cap=round, line join=round, >=Triangle]
+			\clip(-2.19,-2.49) rectangle (2.66,2.58);
+			
+			\draw(0,0) circle (2cm);
+			\draw [rotate around={0.:(0.,0.)},dash pattern=on 3pt off 3pt] (0,0) ellipse (2cm and 0.9cm);
+			\draw (0,0)-- (0.70,1.07);
+			\draw (0,0)-- (-0.70,-1.07);
+			\draw (0, 0) -- (0.80, -0.30);
+			\draw (0.8,-0.15) node[anchor=north west] {$\ket{\Psi}$};
+			\draw [->] (0,0) -- (0,2);
+			\draw [->] (0,0) -- (-0.81,-0.79);
+			\draw [->] (0,0) -- (2,0);
+			\draw (-1.01,-0.72) node[anchor=north west] {$\mathbf {\hat{x}}$};
+			\draw (2.07,0.3) node[anchor=north west] {$\mathbf {\hat{y}}$};
+			\draw (-0.5,2.6) node[anchor=north west] {$\mathbf {\hat{z}=|0\rangle}$};
+			\draw (-0.4,-2) node[anchor=north west] {$-\mathbf {\hat{z}=|1\rangle}$};
+			\draw (0.4,1.65) node[anchor=north west] {$|\psi\rangle$};
+			\draw (-0.8,-1.05) node[anchor=north west] {$\ket{\psi^{\perp}}$};
+			\scriptsize
+			\draw [fill] (0,0) circle (1.5pt);
+			\draw [fill] (0.7,1.1) circle (0.5pt);
+		\end{tikzpicture}
+		\caption{Bloch sphere for $\ket{\Psi} $}
+		\label{fig:blochsphere2}
+	\end{figure} 
+	Let us consider in detail the superposition on the example of simple states, i.e. $\ket{0}$ and $\ket{1}$. The Hadamard operator is used to create a superposition of these basic states, which we discussed in the introduction chapter. This operator can be expressed in terms of Pauly matrices as follows: $ H = \frac{X + Z}{\sqrt{2}}$. From this notation, we see that the Hadamard operator is half a full rotation about the x-axis and half a full rotation about the z-axis. 
+	
+	As a result of this study of states on the Bloch sphere, we would like to note that the rotation that will lead us to the superposition state must take place in such a way as to initially rotate the Bloch sphere in such a direction that the new x-axis coincides with the state vector. So if we either have to learn to rotate the Bloch sphere so that we do not change the state but at the same time know which vector defines the state, or we have to learn to create a state perpendicular to the given one and its copy and then study its composition. 
+	
+	
+	
+\end{document}
